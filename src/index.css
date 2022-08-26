@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+body {
+  background-color: rgba(197, 195, 195, 0.144);
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: #414141;
+  display: flex;
+  justify-content: center;
+}
+.week{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 700px;
+  margin: 0px 5px;
+  padding: 0;
+  text-align: center;
+}
+.week li{
+  background-color: white;
+  border-radius: 3%;
+  border: 1px solid rgba(233, 232, 232);
+  padding: 0 8px;
+  display: block;
+  margin: 0px 5px;
+  overflow-wrap: break-word;
+  max-width: min-content;
+} 
+.week span{
+  color: #a7a5a5;
+  margin-left: 6px;
+}
+.week img{
+  display: flex;
+  width: 60px;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+.search{
+  height: 30px;
+  background-color: inherit;
+  border: 1px solid rgba(197, 195, 195, 0.753);
+  border-radius: 1ex;
+  padding: 2px 7px;
+}
+.search:focus{
+  outline: none;
+  caret-color: #8f8e8e;
+
+}
+.search::placeholder{
+  color: #8f8e8e;
+  padding: 3px;
+}
+
+.header{
+  font-size: 1.8rem;
+  text-shadow: 1px 1px rgba(233, 232, 232);
+}
+
+.loading{
+  margin-top: 50%;
+  font-family: "Work Sans" sans-serif;
+  font-weight: 300;
+}
