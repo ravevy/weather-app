@@ -1,6 +1,5 @@
 import { createContext, useState, useEffect, useContext } from "react"
 import axios from "axios";
-import config from "../config.js"
 
 const WeatherContext = createContext();
 
@@ -10,8 +9,7 @@ export const WeatherProvider = ({children}) => {
   const [city, setCity] = useState()
   const [loading, setLoading] = useState(true)
 
-
-  const api = config.API_TOKEN
+  const api = process.env.REACT_APP_API_TOKEN
  
   useEffect(()=>{
     navigator.geolocation.getCurrentPosition(
