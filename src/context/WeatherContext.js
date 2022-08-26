@@ -34,7 +34,7 @@ export const WeatherProvider = ({children}) => {
     .catch(e => console.log(e))
     .finally(()=>{setLoading(false)})
     } 
-  }, [cord, city])
+  }, [cord, city, api])
 
   const values = {data, setData, cord, setCord, loading, setLoading, city, setCity}
  
